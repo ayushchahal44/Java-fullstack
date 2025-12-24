@@ -458,3 +458,121 @@ switch(value/var/expression){
 - few datatypes are not acceptable - boolean, float, double, long
 
 
+Looping Statement :-
+initialization - Starting value (dynamic), end value (static)
+condition - <,<=,>,>=
+updation
+ - forward <,<= (increment operator)
+ - backward >,>= (decrement operator)
+
+syntax:
+1. do loop :- 
+do {
+	//statement
+	updation
+} while(condition);
+
+
+2. while loop:-
+while(condition){
+	//statement
+	updation
+}
+
+
+3. for loop:-
+for(initialization; condition; updation){
+	//statement
+}
+
+
+
+--> System.exit(0); //inbuild function like break.   //can't use with single statement.
+
+
+
+
+--> A for loop can be written by declaring initialization inside the loop, outside the loop, or by keeping only the condition inside the loop.
+
+Examples:-
+
+for (int i = 1; i <= 5; i++) {
+    System.out.println(i);
+}
+----------------------------------------------------------------------------
+int i = 1;
+for (; i <= 5; i++) {
+    System.out.println(i);
+}
+----------------------------------------------------------------------------
+int i = 1;
+for (; i <= 5; ) {
+    System.out.println(i);
+    i++;
+}
+----------------------------------------------------------------------------
+for (;;) {
+    System.out.println("Infinite Loop");
+}
+----------------------------------------------------------------------------
+
+
+
+Methods :- 
+-> block of memory.
+
+syntax:-
+[Access modifier] [Modifier] [return type] [method name] ([formal args]){                     // using [] to show tokens together not for array.
+	//set of instructions
+}
+
+Method Terminology:-
+1. Method Signature {Method name(formal args) - method name with followed by formal args.}
+2. Method Declaration 
+3. Method Definition {i. Method declaration  ii. Method block(Implementation/Body)}
+
+
+Access Modifier - 
+i. keywords - private - can use only in local method., default - same package any class., protected - can access within the class can access drived class globally, public - can access anywhere.
+2. modifiers - static, final, synchronized, volatile, transient 
+3. return type - it is used to return the data back to method block - 
+i. void - a. it is an keyword.
+ii. datatype - a. class (user) b. Inbuild class - possible 
+
+
+
+User defined methods :-
+	non parameterized method
+i. method without argument and without return statement.
+[AM] [M] void [MN] (){}
+ii. method without argument but here with return statement
+[AM] [M] [Datatype] [method name](){
+	return statement;
+}
+	
+	parameterized method
+i. method with argument, but here without return statement
+[AM] [M] void [method name](datatype class obj / class obj / class obj){}
+
+void method() {
+    int a = 10;
+
+    class Inner {
+        void show() {
+            int a = 20;   //allowed (different scope)
+            System.out.println(a);
+        }
+    }
+
+    System.out.println(a);
+}
+
+
+
+ii. method with arguments, but here with return statement
+[AM] [M] [datatype /user defined class / inbuild class] [method name](datatype class obj / class obj / class obj){
+	return statement;
+}
+
+
+method chaining - when one method is called inside another method in same class.
