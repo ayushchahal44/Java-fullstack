@@ -426,3 +426,35 @@ steps:-
 -> Resource leak (warning)  {Method block}   to avoid it -> object.close();
 
 
+
+Control Statement :-
+
+1. Decision making Statement
+i. if
+ii. if else
+iii. if else ladder
+iv. switch
+v. Nested if
+2. Looping Statement
+i. do while - exit 
+ii. while - entry
+iii. for - entry
+iv. for each
+v. nested loops
+3. Jumping Statement
+i. break
+ii. continue
+iii. return
+
+
+switch:
+switch(value/var/expression){
+	case value/expression:
+		{}
+		break;
+	default:
+		{}
+}
+- few datatypes are not acceptable - boolean, float, double, long
+
+
