@@ -23,8 +23,7 @@ class calmethod
 		System.out.println("Enter number 2: ");
 		int a2 = s.nextInt();
 		int sum = a1+a2;
-		s.close();
-		//System.out.println("The addition is: "+sum);
+		System.out.println("The addition is: "+sum);
 	}
 	public static void subtraction(){
 		Scanner s = new Scanner(System.in);
@@ -33,8 +32,7 @@ class calmethod
 		System.out.println("Enter number 2: ");
 		int b2 = s.nextInt();
 		int min = b1-b2;
-		s.close();
-		//System.out.println("The subtraction is: "+min);
+		System.out.println("The subtraction is: "+min);
 	}
 	public static void multiplication(){
 		Scanner s = new Scanner(System.in);
@@ -43,7 +41,6 @@ class calmethod
 		System.out.println("Enter number 2: ");
 		int c2 = s.nextInt();
 		int mul = c1*c2;
-		s.close();
-		//System.out.println("The multiplication is: "+mul);
+		System.out.println("The multiplication is: "+mul);
 	}
 }

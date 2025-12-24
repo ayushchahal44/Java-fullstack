@@ -14,7 +14,7 @@ class calmethod
 			multiplication();
 		}else{
 		System.out.println("Not valid input.");
-	}
+		}
 	}
 	public static void addition(){
 		Scanner s = new Scanner(System.in);
