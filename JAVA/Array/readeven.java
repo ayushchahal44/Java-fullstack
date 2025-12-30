@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class maxele
+class readeven
 {
 	public static void main(String[] args) 
 	{
@@ -10,11 +10,9 @@ class maxele
 		System.out.print("Enter the "+(i+1)+" element of the array: ");
 		arr[i]=s.nextInt();
 		}
-		System.out.println("-------------------------------------");
-		int max=arr[0];
-		for(int i=1;i<arr.length;i++){
-			if(max<arr[i]) max=arr[i];
+		System.out.println("---------------Even index elements----------------------");
+		for(int i=0;i<arr.length;i++){
+			if(i%2==0) System.out.print(arr[i]+" ");
 		}
-		System.out.print("Max element of array: "+max);
 	}
 }

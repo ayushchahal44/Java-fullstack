@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class maxele
+class secondminele
 {
 	public static void main(String[] args) 
 	{
@@ -11,10 +11,16 @@ class maxele
 		arr[i]=s.nextInt();
 		}
 		System.out.println("-------------------------------------");
-		int max=arr[0];
+		int max = arr[0], smin = -99999;
 		for(int i=1;i<arr.length;i++){
-			if(max<arr[i]) max=arr[i];
-		}
-		System.out.print("Max element of array: "+max);
+			if(arr[i] < max){
+				smin = max;
+				max = arr[i];
+			} else if(arr[i] < smin && arr[i] != max){
+				smin = arr[i];
+				}
+			}
+			System.out.println(smin);
 	}
 }
+

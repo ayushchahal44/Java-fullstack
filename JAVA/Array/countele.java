@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class maxele
+class countele
 {
 	public static void main(String[] args) 
 	{
@@ -11,10 +11,12 @@ class maxele
 		arr[i]=s.nextInt();
 		}
 		System.out.println("-------------------------------------");
-		int max=arr[0];
-		for(int i=1;i<arr.length;i++){
-			if(max<arr[i]) max=arr[i];
+		int count=0;
+		System.out.print("Enter the value you want to count: ");
+		int value = s.nextInt();
+		for(int i=0;i<arr.length;i++){
+			if(value == arr[i]) count++;
 		}
-		System.out.print("Max element of array: "+max);
+		System.out.print("Number of times element occur: "+count);
 	}
 }

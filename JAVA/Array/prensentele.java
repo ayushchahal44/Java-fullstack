@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class maxele
+class prensentele
 {
 	public static void main(String[] args) 
 	{
@@ -11,10 +11,13 @@ class maxele
 		arr[i]=s.nextInt();
 		}
 		System.out.println("-------------------------------------");
-		int max=arr[0];
-		for(int i=1;i<arr.length;i++){
-			if(max<arr[i]) max=arr[i];
+		boolean found = false;
+		for(int i=0;i<a.length;i++){
+			if(a[i] == key){
+				found = true;
+				break;
+			}
 		}
-		System.out.print("Max element of array: "+max);
+		System.out.println(found ? "Present" : "Not Present");
 	}
 }

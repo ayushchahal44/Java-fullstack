@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class maxele
+class firsthalfmax
 {
 	public static void main(String[] args) 
 	{
@@ -12,9 +12,9 @@ class maxele
 		}
 		System.out.println("-------------------------------------");
 		int max=arr[0];
-		for(int i=1;i<arr.length;i++){
-			if(max<arr[i]) max=arr[i];
+		for(int i=0;i<arr.length/2;i++){
+			if(arr[i] > max) max=arr[i];
 		}
-		System.out.print("Max element of array: "+max);
+		System.out.print("Maximum of first half of array: "+max);
 	}
 }
